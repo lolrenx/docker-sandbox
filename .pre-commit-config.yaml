@@ -75,13 +75,13 @@ repos:
       - id: djjs
 
   - repo: https://github.com/adamchainz/django-upgrade
-    rev: 1.5.0
+    rev: 1.6.1
     hooks:
       - id: django-upgrade
         args: [--target-version, "4.0"]
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v2.32.0
+    rev: v2.32.1
     hooks:
       - id: pyupgrade
         args: [--py39-plus]
@@ -98,7 +98,7 @@ repos:
       - id: python-use-type-annotations
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.942
+    rev: v0.950
     hooks:
       - id: mypy
         additional_dependencies: [types-all]
